@@ -2,7 +2,7 @@
   import '@fontsource/alegreya';
   import '@fontsource/quicksand';
   import '@fontsource/yeseva-one';
-  import '@fontsource/josefine-sans';
+  import '@fontsource/josefin-sans';
   import '../app.postcss';
 
   import { AppShell, AppBar, storePopup } from '@skeletonlabs/skeleton';

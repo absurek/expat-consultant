@@ -8,7 +8,7 @@
     alegreya: { base: 'Alegreya', heading: 'Alegreya' },
     abrilFatface: { base: 'Inter, ui-sans-serif, system-ui', heading: 'Abril Fatface' },
     quicksand: { base: 'Quicksand', heading: 'Quicksand' },
-    yesevaJosefin: { base: 'Josefine Sans', heading: 'Yeseva One' },
+    yesevaJosefin: { base: 'Josefin Sans', heading: 'Yeseva One' },
   } as const satisfies Record<string, { base: string; heading: string }>;
 
   let selected: keyof typeof fonts;
@@ -39,7 +39,7 @@
     <ListBoxItem bind:group={selected} name="font" value="alegreya">Alegreya</ListBoxItem>
     <ListBoxItem bind:group={selected} name="font" value="abrilFatface">Abril Fatface</ListBoxItem>
     <ListBoxItem bind:group={selected} name="font" value="quicksand">Quicksand</ListBoxItem>
-    <ListBoxItem bind:group={selected} name="font" value="yesevaJosefin">Yeseva One & Josefine Sans</ListBoxItem>
+    <ListBoxItem bind:group={selected} name="font" value="yesevaJosefin">Yeseva One & Josefin Sans</ListBoxItem>
   </ListBox>
   <div class="bg-surface-100-800-token arrow" />
 </div>
