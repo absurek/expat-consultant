@@ -1,8 +1,5 @@
 <script lang="ts">
-  import '@fontsource/alegreya';
   import '@fontsource/quicksand';
-  import '@fontsource/yeseva-one';
-  import '@fontsource/josefin-sans';
   import '../app.postcss';
 
   import { AppShell, AppBar, storePopup } from '@skeletonlabs/skeleton';
