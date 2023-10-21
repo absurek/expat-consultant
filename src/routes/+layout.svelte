@@ -19,7 +19,7 @@
 
 <AppShell>
   <svelte:fragment slot="header">
-    <AppBar regionRowMain="container lg:max-w-screen-lg mx-auto">
+    <AppBar regionRowMain="container   mx-auto">
       <svelte:fragment slot="lead">
         <div class="flex flex-col">
           <a href="/">
@@ -34,13 +34,13 @@
     </AppBar>
   </svelte:fragment>
 
-  <div class="mx-auto lg:max-w-screen-lg">
+  <div class="mx-auto">
     <slot />
   </div>
 
   <svelte:fragment slot="pageFooter">
     <hr class="mt-8" />
-    <div class="container mx-auto flex justify-between p-4 lg:max-w-screen-lg">
+    <div class="container mx-auto flex justify-between p-4">
       <section>
         <p>Expat Consultant ©, <em>{new Date().getFullYear()}</em> All rights reserved</p>
         <a class="text-primary-500 hover:text-primary-500/80" href="mailto:info@expat-consultant.com">
