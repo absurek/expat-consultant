@@ -17,6 +17,7 @@
     event: 'click',
     target: 'menuPopup',
     placement: 'bottom',
+    closeQuery: 'a[href], button, [data-close-popup]',
     middleware: {
       shift: {
         padding: 20,
@@ -42,7 +43,7 @@
     {#each pages as { path, name }}
       <NavLink {path}>{name}</NavLink>
     {/each}
-    <li class="list-option self-center justify-self-center">
+    <li class="list-option self-center justify-self-center" data-close-popup>
       <LightSwitch />
     </li>
   </ul>

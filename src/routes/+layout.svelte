@@ -10,6 +10,7 @@
 
   const pages: Page[] = [
     { path: '/', name: 'Home' },
+    { path: '/contact', name: 'Contact' },
     { path: '/hungary', name: 'Hungary' },
     { path: '/portugal', name: 'Portugal' },
     { path: '/germany', name: 'Germany' },

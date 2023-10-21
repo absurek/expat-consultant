@@ -19,7 +19,7 @@
     <header>
       <div class="relative">
         <img class="object-fill" src={img.src} alt={img.alt} />
-        <p class="absolute right-0 p-2 text-sm">
+        <p class="absolute bottom-0 right-0 rounded bg-black/40 p-2 text-xs text-dark-token">
           Photo by {img.source.photographer} on
           <a href={img.source.url} class="text-primary-500 hover:text-primary-500/80">
             {img.source.name}
