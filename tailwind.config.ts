@@ -5,6 +5,7 @@ import typography from '@tailwindcss/typography';
 import { skeleton } from '@skeletonlabs/tw-plugin';
 
 import { colorfulModernTheme } from './themes/colorful-modern';
+import { monochromeModernTheme } from './themes/monochrome-modern';
 
 export default {
   darkMode: 'class',
@@ -20,7 +21,7 @@ export default {
     typography,
     skeleton({
       themes: {
-        custom: [colorfulModernTheme],
+        custom: [colorfulModernTheme, monochromeModernTheme],
         preset: [
           {
             name: 'vintage',

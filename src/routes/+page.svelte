@@ -5,8 +5,6 @@
   import BudapestParliament from '$assets/budapest-parliament.jpg';
   import BerlinBuilding from '$assets/berlin-building.jpg';
   import LisboaBridge from '$assets/lisboa-bridge.jpg';
-
-  $: console.log({ BudapestParliament });
 </script>
 
 <section class="dark relative mx-auto max-w-fit 2xl:container md:max-h-96 md:overflow-hidden">

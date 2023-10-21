@@ -1,5 +1,10 @@
 <script lang="ts">
+  import '@fontsource/alegreya';
+  import '@fontsource/quicksand';
+  import '@fontsource/yeseva-one';
+  import '@fontsource/josefine-sans';
   import '../app.postcss';
+
   import { AppShell, AppBar, storePopup } from '@skeletonlabs/skeleton';
   import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
 

@@ -10,7 +10,8 @@
   import type { PopupSettings } from '@skeletonlabs/skeleton';
   import { IconMenu2 } from '@tabler/icons-svelte';
   import NavLink from '$components/NavLink.svelte';
-  import ThemeSwitcher from './ThemeSwitcher.svelte';
+  import ThemeSwitcher from '$components/ThemeSwitcher.svelte';
+  import FontSwitcher from '$components/FontSwitcher.svelte';
 
   export let pages: Page[];
 
@@ -29,6 +30,7 @@
 
 <nav class="list-nav hidden gap-x-4 md:flex md:items-center">
   <ul class="flex items-baseline">
+    <div class="px-4"><FontSwitcher /></div>
     <div class="px-4"><ThemeSwitcher /></div>
     {#each pages as { path, name }}
       <NavLink {path}>{name}</NavLink>
@@ -41,6 +43,7 @@
 
 <button class="md:hidden" title="Menu" use:popup={menuPopup}><IconMenu2 /></button>
 <nav class="bg-surface-100-800-token list-nav p-6" data-popup="menuPopup">
+  <FontSwitcher />
   <ThemeSwitcher />
   <ul class="flex flex-col">
     {#each pages as { path, name }}
