@@ -5,6 +5,10 @@
   import GermanyRiver from '$assets/germany-river.jpg';
 </script>
 
+<svelte:head>
+  <title>Expat Consultant — Home</title>
+</svelte:head>
+
 <section id="hero" class="mx-auto grid max-w-screen-lg grid-cols-1 items-center gap-12 p-8 md:grid-cols-2 md:gap-24">
   <div class="flex flex-col gap-4">
     <h2 class="h2 text-6xl">Start your new life</h2>
