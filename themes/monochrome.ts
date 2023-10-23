@@ -1,19 +1,19 @@
 import type { CustomThemeConfig } from '@skeletonlabs/tw-plugin';
 
-export const monochromeModernTheme: CustomThemeConfig = {
-  name: 'monochrome-modern',
+export const monochrome: CustomThemeConfig = {
+  name: 'monochrome',
   properties: {
     // =~= Theme Properties =~=
     '--theme-font-family-base': `Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'`,
-    '--theme-font-family-heading': `ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif`,
+    '--theme-font-family-heading': `Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'`,
     '--theme-font-color-base': '0 0 0',
     '--theme-font-color-dark': '255 255 255',
-    '--theme-rounded-base': '8px',
+    '--theme-rounded-base': '9999px',
     '--theme-rounded-container': '8px',
     '--theme-border-base': '1px',
     // =~= Theme On-X Colors =~=
     '--on-primary': '255 255 255',
-    '--on-secondary': '0 0 0',
+    '--on-secondary': '255 255 255',
     '--on-tertiary': '0 0 0',
     '--on-success': '0 0 0',
     '--on-warning': '0 0 0',
@@ -31,28 +31,28 @@ export const monochromeModernTheme: CustomThemeConfig = {
     '--color-primary-700': '62 62 62', // #3e3e3e
     '--color-primary-800': '49 49 49', // #313131
     '--color-primary-900': '40 40 40', // #282828
-    // secondary | #90A19D
-    '--color-secondary-50': '238 241 240', // #eef1f0
-    '--color-secondary-100': '233 236 235', // #e9eceb
-    '--color-secondary-200': '227 232 231', // #e3e8e7
-    '--color-secondary-300': '211 217 216', // #d3d9d8
-    '--color-secondary-400': '177 189 186', // #b1bdba
-    '--color-secondary-500': '144 161 157', // #90A19D
-    '--color-secondary-600': '130 145 141', // #82918d
-    '--color-secondary-700': '108 121 118', // #6c7976
-    '--color-secondary-800': '86 97 94', // #56615e
-    '--color-secondary-900': '71 79 77', // #474f4d
-    // tertiary | #6dbaba
-    '--color-tertiary-50': '233 245 245', // #e9f5f5
-    '--color-tertiary-100': '226 241 241', // #e2f1f1
-    '--color-tertiary-200': '219 238 238', // #dbeeee
-    '--color-tertiary-300': '197 227 227', // #c5e3e3
-    '--color-tertiary-400': '153 207 207', // #99cfcf
-    '--color-tertiary-500': '109 186 186', // #6dbaba
-    '--color-tertiary-600': '98 167 167', // #62a7a7
-    '--color-tertiary-700': '82 140 140', // #528c8c
-    '--color-tertiary-800': '65 112 112', // #417070
-    '--color-tertiary-900': '53 91 91', // #355b5b
+    // secondary | #627a74
+    '--color-secondary-50': '231 235 234', // #e7ebea
+    '--color-secondary-100': '224 228 227', // #e0e4e3
+    '--color-secondary-200': '216 222 220', // #d8dedc
+    '--color-secondary-300': '192 202 199', // #c0cac7
+    '--color-secondary-400': '145 162 158', // #91a29e
+    '--color-secondary-500': '98 122 116', // #627a74
+    '--color-secondary-600': '88 110 104', // #586e68
+    '--color-secondary-700': '74 92 87', // #4a5c57
+    '--color-secondary-800': '59 73 70', // #3b4946
+    '--color-secondary-900': '48 60 57', // #303c39
+    // tertiary | #369b9b
+    '--color-tertiary-50': '225 240 240', // #e1f0f0
+    '--color-tertiary-100': '215 235 235', // #d7ebeb
+    '--color-tertiary-200': '205 230 230', // #cde6e6
+    '--color-tertiary-300': '175 215 215', // #afd7d7
+    '--color-tertiary-400': '114 185 185', // #72b9b9
+    '--color-tertiary-500': '54 155 155', // #369b9b
+    '--color-tertiary-600': '49 140 140', // #318c8c
+    '--color-tertiary-700': '41 116 116', // #297474
+    '--color-tertiary-800': '32 93 93', // #205d5d
+    '--color-tertiary-900': '26 76 76', // #1a4c4c
     // success | #84cc16
     '--color-success-50': '237 247 220', // #edf7dc
     '--color-success-100': '230 245 208', // #e6f5d0

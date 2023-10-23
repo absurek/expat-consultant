@@ -25,8 +25,8 @@
   };
 </script>
 
-<nav class="list-nav hidden gap-x-4 md:flex md:items-center">
-  <ul class="flex items-baseline">
+<nav class="hidden gap-x-4 md:flex md:items-center">
+  <ul class="flex items-baseline gap-4">
     {#each pages as { path, name }}
       <NavLink {path}>{name}</NavLink>
     {/each}

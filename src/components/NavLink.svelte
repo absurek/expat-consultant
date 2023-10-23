@@ -7,7 +7,12 @@
 </script>
 
 <li>
-  <a href={path} class:!bg-primary-500={isCurrentPage()} aria-current={isCurrentPage() ? 'page' : 'false'}>
+  <a
+    href={path}
+    class="hover:underline"
+    class:underline={isCurrentPage()}
+    aria-current={isCurrentPage() ? 'page' : 'false'}
+  >
     <slot />
   </a>
 </li>
