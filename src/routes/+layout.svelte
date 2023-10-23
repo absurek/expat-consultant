@@ -7,6 +7,7 @@
 
   import NavLink from '$components/NavLink.svelte';
   import type { NavPage } from '$components/NavLink.svelte';
+  import { afterNavigate } from '$app/navigation';
 
   initializeStores();
 
@@ -19,6 +20,11 @@
     { path: '/portugal', name: 'Portugal' },
     { path: '/germany', name: 'Germany' },
   ];
+
+  afterNavigate(() => {
+    const top = document.getElementById('top') as HTMLElement;
+    top.scrollIntoView();
+  });
 </script>
 
 <Drawer position="top">
@@ -67,6 +73,7 @@
   </svelte:fragment>
 
   <div class="mx-auto">
+    <span id="top" class="invisible" />
     <slot />
   </div>
 
