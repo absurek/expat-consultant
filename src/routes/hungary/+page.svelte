@@ -48,7 +48,7 @@
           <Business />
         </div>
         <div class="flex flex-col items-center gap-4 p-8">
-          <h3 class="h3">Would you like to read more about our specific services in Hungary?</h3>
+          <h3 class="h3">Would you like to learn more about our specific services in Hungary?</h3>
           <div class="flex justify-center gap-4">
             <a href="/hungary/coworking-space" class="variant-filled btn">Coworking Space</a>
             <a href="/hungary/business-services" class="variant-filled btn">Business Services</a>
