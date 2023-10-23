@@ -22,9 +22,9 @@
 <AppShell>
   <svelte:fragment slot="header">
     <AppBar
-      gridColumns="grid-cols-3"
+      gridColumns="grid-cols-2 md:grid-cols-3"
       regionRowMain="mx-auto max-w-screen-lg"
-      slotDefault="place-self-center"
+      slotDefault="hidden md:block"
       slotTrail="place-content-end"
     >
       <svelte:fragment slot="lead">
@@ -32,14 +32,14 @@
           <a href="/">
             <h1 class="h1 text-xl uppercase">Expat Consultant</h1>
           </a>
-          <p class="text-primary-400">Experts in relocation matters</p>
+          <p class="text-primary-400">Experts in relocation</p>
         </div>
       </svelte:fragment>
-      <svelte:fragment slot="default">
-        <NavBar {pages} />
-      </svelte:fragment>
       <svelte:fragment slot="trail">
-        <LightSwitch />
+        <div class="flex gap-8">
+          <NavBar {pages} />
+          <LightSwitch />
+        </div>
       </svelte:fragment>
     </AppBar>
   </svelte:fragment>
