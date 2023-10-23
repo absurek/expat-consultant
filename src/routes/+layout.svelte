@@ -2,15 +2,17 @@
   import '@fontsource/quicksand';
   import '../app.postcss';
 
-  import { AppShell, AppBar, storePopup, LightSwitch } from '@skeletonlabs/skeleton';
-  import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
+  import { Drawer, AppShell, AppBar, LightSwitch, initializeStores, getDrawerStore } from '@skeletonlabs/skeleton';
+  import { IconMenu2, IconX } from '@tabler/icons-svelte';
 
-  import type { Page } from '$components/NavBar.svelte';
-  import NavBar from '$components/NavBar.svelte';
+  import NavLink from '$components/NavLink.svelte';
+  import type { NavPage } from '$components/NavLink.svelte';
 
-  storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
+  initializeStores();
 
-  const pages: Page[] = [
+  const drawerStore = getDrawerStore();
+
+  const pages: NavPage[] = [
     { path: '/', name: 'Home' },
     { path: '/contact', name: 'Contact' },
     { path: '/hungary', name: 'Hungary' },
@@ -18,6 +20,19 @@
     { path: '/germany', name: 'Germany' },
   ];
 </script>
+
+<Drawer position="top">
+  <button class="flex min-w-full justify-end p-8" title="Close menu" on:click={() => drawerStore.close()}>
+    <IconX />
+  </button>
+  <nav class="p-8 text-center">
+    <ul class="flex flex-col gap-2">
+      {#each pages as { path, name }}
+        <NavLink on:click={() => drawerStore.close()} {path}>{name}</NavLink>
+      {/each}
+    </ul>
+  </nav>
+</Drawer>
 
 <AppShell>
   <svelte:fragment slot="header">
@@ -37,7 +52,14 @@
       </svelte:fragment>
       <svelte:fragment slot="trail">
         <div class="flex gap-8">
-          <NavBar {pages} />
+          <nav class="hidden gap-x-4 md:flex md:items-center">
+            <ul class="flex items-baseline gap-4">
+              {#each pages as { path, name }}
+                <NavLink {path}>{name}</NavLink>
+              {/each}
+            </ul>
+          </nav>
+          <button class="md:hidden" title="Menu" on:click={() => drawerStore.open()}><IconMenu2 /></button>
           <LightSwitch />
         </div>
       </svelte:fragment>

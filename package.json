@@ -40,7 +40,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@floating-ui/dom": "^1.5.3",
     "@fontsource/quicksand": "^5.0.14",
     "@tabler/icons-svelte": "^2.39.0"
   }
