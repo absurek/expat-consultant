@@ -14,7 +14,7 @@
 </section>
 
 <section id="contact-info" class="mx-auto block max-w-screen-lg p-8 text-center">
-  <h1 class="h2">Contact</h1>
+  <h2 class="h2">Contact</h2>
   <div class="card mx-auto mt-8 max-w-xl p-4 text-left">
     <div class="grid gap-1">
       <ul>
