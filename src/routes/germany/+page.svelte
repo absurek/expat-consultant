@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Expat Consultant — Hungary</title>
+  <title>Expat Consultant — Germany</title>
 </svelte:head>
 
 <section id="hero" class="mx-auto grid max-w-screen-lg grid-cols-1 items-center gap-12 p-8 md:grid-cols-2 md:gap-24">
