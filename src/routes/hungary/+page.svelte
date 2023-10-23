@@ -20,7 +20,7 @@
     <h1 class="h1">Why should you choose Hungary?</h1>
     <a href="/contact" class="variant-filled btn max-w-min"><strong>Let us tell you!</strong></a>
   </div>
-  <img src={HungaryParliament} alt="A drawing of a map" class="rounded-xl" />
+  <img src={HungaryParliament} alt="A drawing of the Hungarian Parliament" class="rounded-xl" />
 </section>
 
 <sction id="intro" class="mx-auto block max-w-screen-lg p-8">
