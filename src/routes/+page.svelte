@@ -6,11 +6,12 @@
 </script>
 
 <section id="hero" class="mx-auto grid max-w-screen-lg grid-cols-1 items-center gap-12 p-8 md:grid-cols-2 md:gap-24">
-  <div>
+  <div class="flex flex-col gap-4">
     <h2 class="h2 text-6xl">Start your new life</h2>
     <p class="text-left text-xl text-primary-400">
       Welcome to <strong>Expat Consultant</strong>, your trusted partner in seamless relocations!
     </p>
+    <a href="/contact" class="variant-filled btn max-w-min"><strong>Contact us</strong></a>
   </div>
   <img src={Map} alt="A drawing of a map" class="rounded-xl" />
 </section>
