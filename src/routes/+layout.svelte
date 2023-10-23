@@ -47,7 +47,7 @@
           <a href="/">
             <h1 class="h1 text-xl uppercase">Expat Consultant</h1>
           </a>
-          <p class="text-primary-400">Experts in relocation</p>
+          <p class="text-neutral-700 dark:text-neutral-300">Experts in relocation</p>
         </div>
       </svelte:fragment>
       <svelte:fragment slot="trail">
