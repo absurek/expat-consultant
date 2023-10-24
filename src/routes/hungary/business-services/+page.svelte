@@ -1,5 +1,6 @@
 <script lang="ts">
   import { IconMail, IconDeviceLandlinePhone } from '@tabler/icons-svelte';
+  import Link from '$components/Link.svelte';
   import Details from './Details.svelte';
 </script>
 
@@ -23,7 +24,7 @@
             <IconDeviceLandlinePhone size={42} />
             <div>
               <p class="lg:text-xl">+36 20 416 0038</p>
-              <a class="text-tertiary-500 hover:text-tertiary-500/80 lg:text-xl" href="tel:+36204160038">Phone</a>
+              <Link href="tel:+36204160038">Phone</Link>
             </div>
           </div>
         </li>
@@ -32,12 +33,7 @@
             <IconMail size={42} />
             <div>
               <p class="lg:text-xl">info@expat-consultant.com</p>
-              <a
-                class="text-tertiary-500 hover:text-tertiary-500/80 lg:text-xl"
-                href="mailto:info@expat-consultant.com"
-              >
-                E-mail
-              </a>
+              <Link href="mailto:info@expat-consultant.com">E-mail</Link>
             </div>
           </div>
         </li>

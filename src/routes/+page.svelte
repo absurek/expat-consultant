@@ -3,6 +3,7 @@
   import HungaryParliament from '$assets/hungary-parliament.jpg';
   import PortugalCity from '$assets/portugal-city.jpg';
   import GermanyRiver from '$assets/germany-river.jpg';
+  import Link from '$components/Link.svelte';
 </script>
 
 <svelte:head>
@@ -44,7 +45,7 @@
       highly skilled, well-educated workforce.
     </p>
     <p>
-      <a href="/hungary" class="text-tertiary-500 hover:text-tertiary-500/80">Learn more &rarr;</a>
+      <Link href="/hungary">Learn more &rarr;</Link>
     </p>
   </div>
 </section>
@@ -63,7 +64,7 @@
       Coimbra.
     </p>
     <p>
-      <a href="/portugal" class="text-tertiary-500 hover:text-tertiary-500/80">Learn more &rarr;</a>
+      <Link href="/portugal">Learn more &rarr;</Link>
     </p>
   </div>
 </section>
@@ -82,7 +83,7 @@
       The country is known for its highly skilled and educated workforce, as well as its strong and stable economy.
     </p>
     <p>
-      <a href="/germany" class="text-tertiary-500 hover:text-tertiary-500/80">Learn more &rarr;</a>
+      <Link href="/germany">Learn more &rarr;</Link>
     </p>
   </div>
 </section>
