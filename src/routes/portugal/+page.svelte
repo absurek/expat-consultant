@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { TabGroup, Tab } from '@skeletonlabs/skeleton';
+  import type { Writable } from 'svelte/store';
+  import { TabGroup, Tab, localStorageStore } from '@skeletonlabs/skeleton';
   import PortugalRiver from '$assets/portugal-river.jpg';
   import Introduction from './Introduction.svelte';
   import Student from './Student.svelte';
@@ -8,7 +9,7 @@
   const tabs = ['student', 'business'] as const;
   type Tab = (typeof tabs)[number];
 
-  let tab: Tab = 'student';
+  const tab: Writable<Tab> = localStorageStore('portugal-tab', 'student');
 </script>
 
 <svelte:head>
@@ -31,11 +32,11 @@
 
 <section id="details" class="mx-auto max-w-screen-lg p-8">
   <TabGroup>
-    <Tab bind:group={tab} name="tab1" value="student"><h2>For Students</h2></Tab>
-    <Tab bind:group={tab} name="tab2" value="business"><h2>For Businesses</h2></Tab>
+    <Tab bind:group={$tab} name="tab1" value="student"><h2>For Students</h2></Tab>
+    <Tab bind:group={$tab} name="tab2" value="business"><h2>For Businesses</h2></Tab>
 
     <svelte:fragment slot="panel">
-      {#if tab === 'student'}
+      {#if $tab === 'student'}
         <div class="prose prose-neutral mx-auto text-left dark:prose-invert lg:prose-xl">
           <Student />
         </div>
@@ -43,7 +44,7 @@
           <h3 class="h3">Are you interested?</h3>
           <p><a href="/contact" class="variant-filled btn max-w-min"><strong>Contact us</strong></a></p>
         </div>
-      {:else if tab === 'business'}
+      {:else if $tab === 'business'}
         <div class="prose prose-neutral mx-auto text-left dark:prose-invert lg:prose-xl">
           <Business />
         </div>
