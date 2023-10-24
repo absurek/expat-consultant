@@ -8,6 +8,7 @@
   import NavLink from '$components/NavLink.svelte';
   import type { NavPage } from '$components/NavLink.svelte';
   import { afterNavigate } from '$app/navigation';
+  import Link from '$components/Link.svelte';
 
   initializeStores();
 
@@ -83,12 +84,21 @@
       <section>
         <p>Expat Consultant ©</p>
         <p><em>{new Date().getFullYear()}</em> All rights reserved</p>
-        <a class="text-tertiary-500 hover:text-tertiary-500/80" href="mailto:info@expat-consultant.com">
-          info@expat-consultant.com
-        </a>
+        <Link href="mailto:info@expat-consultant.com">info@expat-consultant.com</Link>
+      </section>
+      <section class="hidden justify-center gap-12 text-sm md:flex">
+        <Link href="/">Home</Link>
+        <Link href="/contact">Contact</Link>
+        <div class="flex flex-col">
+          <Link href="/hungary">Hungary</Link>
+          <Link href="/hungary/coworking-space">Coworking Space</Link>
+          <Link href="/hungary/business-services">Business Services</Link>
+        </div>
+        <Link href="/portugal">Portugal</Link>
+        <Link href="/germany">Germany</Link>
       </section>
       <section class="self-end">
-        <a class="text-tertiary-500 hover:text-tertiary-500/80" href="/contact">Get in touch</a>
+        <Link href="/contact">Get in touch</Link>
       </section>
     </div>
   </svelte:fragment>
