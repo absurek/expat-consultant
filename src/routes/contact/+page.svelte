@@ -1,5 +1,6 @@
 <script lang="ts">
   import { IconMail, IconBrandInstagram, IconBrandLinkedin } from '@tabler/icons-svelte';
+  import Link from '$components/Link.svelte';
 </script>
 
 <svelte:head>
@@ -16,12 +17,7 @@
             <IconMail size={42} />
             <div>
               <p class="lg:text-xl">info@expat-consultant.com</p>
-              <a
-                class="text-tertiary-500 hover:text-tertiary-500/80 lg:text-xl"
-                href="mailto:info@expat-consultant.com"
-              >
-                E-mail
-              </a>
+              <Link href="mailto:info@expat-consultant.com">E-mail</Link>
             </div>
           </div>
         </li>
@@ -30,13 +26,7 @@
             <IconBrandInstagram size={42} />
             <div>
               <p class="lg:text-xl">@expat_consultant_</p>
-              <a
-                class="text-tertiary-500 hover:text-tertiary-500/80 lg:text-xl"
-                href="https://www.instagram.com/expat_consultant_/"
-                target="_blank"
-              >
-                Instagram
-              </a>
+              <Link href="https://www.instagram.com/expat_consultant_/" target="_blank">Instagram</Link>
             </div>
           </div>
         </li>
@@ -45,13 +35,7 @@
             <IconBrandLinkedin size={42} />
             <div>
               <p class="lg:text-xl">Falinora Kft.</p>
-              <a
-                class="text-tertiary-500 hover:text-tertiary-500/80 lg:text-xl"
-                href="https://www.linkedin.com/in/falinora-kft-245566260/"
-                target="_blank"
-              >
-                Linkedin
-              </a>
+              <Link href="https://www.linkedin.com/in/falinora-kft-245566260/" target="_blank">Linkedin</Link>
             </div>
           </div>
         </li>
