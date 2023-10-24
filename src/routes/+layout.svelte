@@ -51,7 +51,7 @@
       <svelte:fragment slot="lead">
         <div class="flex flex-col">
           <a href="/">
-            <h1 class="h1 text-xl uppercase">Expat Consultant</h1>
+            <strong class="uppercase md:text-xl">Expat Consultant</strong>
           </a>
           <p class="text-neutral-700 dark:text-neutral-300">Experts in relocation</p>
         </div>
