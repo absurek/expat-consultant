@@ -32,7 +32,7 @@
 </section>
 
 <section id="hungary" class="mx-auto grid max-w-screen-lg grid-cols-1 gap-12 p-8 md:grid-cols-2 md:gap-24">
-  <img src={HungaryParliament} alt="A drawing of the Hungarian Parliament" class="h-full rounded-xl" />
+  <img src={HungaryParliament} alt="A drawing of the Hungarian Parliament" class="rounded-xl" />
   <div class="flex h-full flex-col justify-between gap-8 md:gap-0">
     <h2 class="h2">Hungary</h2>
     <p class="text-left text-neutral-700 dark:text-neutral-300 lg:text-xl">
@@ -51,7 +51,7 @@
 </section>
 
 <section id="portugal" class="mx-auto grid max-w-screen-lg grid-cols-1 gap-12 p-8 md:grid-cols-2 md:gap-24">
-  <img src={PortugalCity} alt="A drawing of a streetview in Portugal" class="h-full rounded-xl md:order-last" />
+  <img src={PortugalCity} alt="A drawing of a streetview in Portugal" class="rounded-xl md:order-last" />
   <div class="flex h-full flex-col justify-between gap-8 md:gap-0">
     <h2 class="h2">Portugal</h2>
     <p class="text-left text-neutral-700 dark:text-neutral-300 lg:text-xl">
@@ -70,7 +70,7 @@
 </section>
 
 <section id="germany" class="mx-auto grid max-w-screen-lg grid-cols-1 gap-12 p-8 md:grid-cols-2 md:gap-24">
-  <img src={GermanyRiver} alt="A drawing of a building in Germany" class="h-full rounded-xl" />
+  <img src={GermanyRiver} alt="A drawing of a building in Germany" class="rounded-xl" />
   <div class="flex h-full flex-col justify-between gap-8 md:gap-0">
     <h2 class="h2">Germany</h2>
     <p class="text-left text-neutral-700 dark:text-neutral-300 lg:text-xl">
