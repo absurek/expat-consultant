@@ -49,12 +49,12 @@
           <Business />
         </div>
         <div class="flex flex-col items-center gap-4 p-8">
-          <h3 class="h3">Would you like to learn more about our specific services in Hungary?</h3>
-          <div class="flex justify-center gap-4">
+          <h3 class="h3 text-center">Would you like to learn more about our specific services in Hungary?</h3>
+          <div class="flex flex-col justify-center gap-4 md:flex-row">
             <a href="/hungary/coworking-space" class="variant-filled btn">Coworking Space</a>
             <a href="/hungary/business-services" class="variant-filled btn">Business Services</a>
           </div>
-          <h3 class="h3">Are you already interested?</h3>
+          <h3 class="h3 text-center">Are you already interested?</h3>
           <p><a href="/contact" class="variant-filled btn max-w-min"><strong>Contact us</strong></a></p>
         </div>
       {/if}
