@@ -34,8 +34,8 @@
           <div class="-mx-2 flex items-center space-x-4 p-2">
             <IconBrandLinkedin size={42} />
             <div>
-              <p class="lg:text-xl">Falinora Kft.</p>
-              <Link href="https://www.linkedin.com/in/falinora-kft-245566260/" target="_blank">Linkedin</Link>
+              <p class="lg:text-xl">Expat-Consultant</p>
+              <Link href="https://www.linkedin.com/company/expat-consultant/" target="_blank">Linkedin</Link>
             </div>
           </div>
         </li>
